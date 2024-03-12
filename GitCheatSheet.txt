@@ -13,6 +13,9 @@ Configuring the username and email ID
  git config --global user.name "Username"
  git config --global user.email "Email"
 
+Connecting machine to Git-Hub through SSH public key
+ssh -T git@github.com
+
 Innitialize repo
  git init
 
