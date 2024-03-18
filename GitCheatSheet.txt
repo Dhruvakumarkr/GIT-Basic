@@ -65,10 +65,16 @@ Alias:
  git config --global alias.ci commit
  git config --global alias.st status
  git config --global --unset "alias.name"
- git config --global --unset-all
+ git config --global --unset-all 
 
 Diff commands:
  Difference between two commits= git diff <old commit> <new commit>
+ Difference between working directory and staging area: git diff
+ Difference between staging area and the last commit: git diff --staged
+ Difference between working directory and the last commit: git diff HEAD
+ Difference between branches: git diff <branch1 name> <branch2 name>
+ Difference between a commit and the staging area: git diff --cached <commit-hash>
+ Difference between a commit and the working directory: git diff <comit hash>
  Difference between two commits= git diff <old commit> <new commit> -- filename
  Modified VS Commited = git diff <filename>
  Staged VS Commited = git diff --staged <Filename>
